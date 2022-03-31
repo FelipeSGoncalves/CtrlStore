@@ -1,2 +1,3 @@
 # CtrlStore
-### Buscador que compara as melhores opções para cada usuário
+### O site que te ajuda a escolher o melhor eletrônico
+
