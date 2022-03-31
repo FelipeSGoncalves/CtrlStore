@@ -1,5 +1,4 @@
 <?php
-
     include_once("conexao.php");
 
     echo "<h1> Selecionando registros usando FOR </h1>";
@@ -29,7 +28,7 @@
 
         $preco = number_format($preco, 2);
 
-        $imagemteste = '../../img/Smartphone/imageMotorolaG10.png';
+        echo $imagem;
 
         if($idCategoria == 1){
             
@@ -38,13 +37,27 @@
             <td> $nome </td>
             <td> $marca </td>
             <td> $preco </td> 
-            <td> <img src='$imagemteste' style='width=100px'> </td>
+            <td> <img src='$imagem'> </td>
             <td> $desc </td> </tr>";
         }
 
         echo "</table";
-
     }
-
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="../CSS/signup.css"> -->
+        <title> Sign Up </title>
+    </head>
+
+    <body>
+        <h1> <?php echo $dados["product__name"] ?> </h1>
+        <h1> dede </h1>
+    </body>
+</html>
 
