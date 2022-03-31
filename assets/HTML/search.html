@@ -7,13 +7,14 @@
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/signup.css">
 
     <title> CtrlStore </title>
 </head>
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">
+            <a href="search.html" class="nav__logo">
                 <i class="bx bxs-shopping-bags nav__logo-icon"></i> CtrlStore
             </a>
 
@@ -44,5 +45,23 @@
             </div>
         </nav>
     </header>
+
+    <main>
+        <div class="signup_container">
+            <div class="signup_form">
+                <form id="signup" method="post" action="../PHP/lista-produtos.php" >
+                        <h1> Cadastrar </h1>
+                        <input type="text" name="name" placeholder="Nome Completo"/>
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="password" name="password" placeholder="Senha">
+                        <input type="number" name="phone" placeholder="Número celular">
+                        <input type="number" name="cpf"  placeholder="CPF">
+                        <input type="date" name="birthdate">
+                        <input type="submit" value="Cadastrar"/>
+                </form>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
