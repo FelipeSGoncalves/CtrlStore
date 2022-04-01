@@ -3,7 +3,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "";
-$banco = "dbcrtlstore";
+$banco = "dbctrlstore";
 
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $banco) 

@@ -403,11 +403,9 @@ button, input{
 
 /* -------- Pagina HOME -------- */
 
-
 .home{
     display: block;
     float: right;
-    margin-right: 10%;
 }
 
 .home__content{
@@ -423,6 +421,7 @@ button, input{
 }
 
 .home__img{
+    width: 100%;
     height: 400px;
     transform: translate(-3rem);
     justify-self: center;
@@ -540,7 +539,7 @@ button, input{
 .search_container{
     width: 90%;
     margin-left: 5%;
-    margin-top: 100px;
+    margin-top: 10px;
     transition: 2s;
 }
 
@@ -552,7 +551,7 @@ button, input{
 
 .search_form{
     width: 300px;
-    margin-top: 6%;
+    margin-top: 10%;
     display: inline-block;
     border: 1px solid black;
     border-radius: 15px;
@@ -753,3 +752,5 @@ input[type=submit]:hover{
     width: 26%;
     height: 55px;
 }
+
+
