@@ -63,43 +63,39 @@
 </head>
 
 <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+          <a href="../HTML/landingPage.html" class="nav__logo">
+              <i class="bx bxs-shopping-bags nav__logo-icon"></i> CtrlStore
+          </a>
 
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li class="nav__item">
+                      <a href="../HTML/landingPage.html" class="nav__link active-link"> Home </a>
+                  </li>
 
-  <header class="header" id="header">
-    <nav class="nav container">
-        <a href="search.html" class="nav__logo">
-            <i class="bx bxs-shopping-bags nav__logo-icon"></i> CtrlStore
-        </a>
+                  <li class="nav__item">
+                      <a href="productPage.html" class="nav__link"> Shop </a>
+                  </li>
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="search.html" class="nav__link active-link"> Home </a>
-                </li>
+                  <li class="nav__item">
+                      <a href="aboutUs.html" class="nav__link"> About us</a>
+                  </li>
+              </ul>
+          </div>
 
-                <li class="nav__item">
-                    <a href="productPage.html" class="nav__link"> Shop </a>
-                </li>
+          <div class="nav__btns">
+              <div class="login__toggle" id="login-toggle">
+                  <i class="bx bx-user"></i>
+              </div>
 
-                <li class="nav__item">
-                    <a href="aboutUs.html" class="nav__link"> About us</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="nav__btns">
-            <div class="login__toggle" id="login-toggle">
-                <i class="bx bx-user"></i>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="bx bx-grid-alt"></i>
-            </div>
-        </div>
-      </nav>
-  </header>
-
-
+              <div class="nav__toggle" id="nav-toggle">
+                  <i class="bx bx-grid-alt"></i>
+              </div>
+          </div>
+        </nav>
+    </header>
 
     <div class = "card-wrapper">
         <div class = "card">

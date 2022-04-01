@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap);
 
-    :root{
+/* Variaveis utilizadas no CSS */
+:root{
     --header-height: 3.5rem;
 
     /* Cores */
@@ -49,8 +50,6 @@
     }
 }
 
-/* BASE */
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -71,13 +70,13 @@ body{
     color: var(--text-color);
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
 
 ul{
-    list-style: none;
+    list-style-type: none;
 }
 
 a{
@@ -114,6 +113,10 @@ button, input{
     text-align: center;
 }
 
+.breadcrumb__subtitle span{
+    color: var(--first-color);
+}
+
 /* Layout */
 
 .container{
@@ -126,19 +129,19 @@ button, input{
     display: grid;
 }
 
-
-/* ========== Header ========== */
+/* Header */
 
 .header{
     width: 100%;
-    background: var(--container-color);
+    background: transparent;
     position: fixed;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
 }
 
-/* Nav */
+/* -------- Nav -------- */
+
 .nav{
     height: calc(var(--header-height) + 1.5rem);
     display: flex;
@@ -149,15 +152,15 @@ button, input{
 
 .login__toggle, .nav__logo, .nav__toggle, .nav__shop{
     color: var(--title-color);
-    transition: 2s;
 }
 
 .nav__logo{
-    font-weight: 600;
+    /* text-transform: lowercase; */
+    font-weight: var(--font-bold);
     letter-spacing: 1px;
     display: inline-flex;
     align-items: center;
-    column-gap: 0.25rem;
+    column-gap: 4px;
 }
 
 .nav__logo-icon{
@@ -184,9 +187,9 @@ button, input{
 
 .nav__link{
     color: var(--title-color);
-    font-weight: 500;
-    font-size: var(--normal-font-size);
-    transition: .3s;
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size); 
+    transition: .3s; 
 }
 
 .nav__link:hover{
@@ -197,7 +200,7 @@ button, input{
     display: none;
 }
 
-/* Link Ativo */
+/* Link ativo */
 
 .active-link{
     position: relative;
@@ -330,6 +333,7 @@ button, input{
     right: 0;
 }
 
+
 /* --------- Login -------- */
 
 .login{
@@ -383,27 +387,30 @@ button, input{
     padding: .25rem .5rem .5rem 0;
 }
 
-/* Botoes */
-
-.button{
-    display: inline-block;
-    background: red;
-    color: #fff;
-    padding: 1rem 1.75rem;
-    border-radius: .5rem;
+.singup{
+    color: var(--title-color);
+    font-size: var(--smal-font-size);
     font-weight: var(--font-medium);
-    transition: .3s;
 }
 
-.button:hover{
-    background: var(--first-color-alt);
+.singup a{
+    color: var(--first-color);
 }
 
-/* ======== MAIN ======== */
+.show-login{
+    right: 0;
+}
 
-/* ------ HOME ------ */
+/* -------- Pagina HOME -------- */
 
-.home__container{
+
+.home{
+    display: block;
+    float: right;
+    margin-right: 10%;
+}
+
+.home__content{
     padding: 9rem 0 2rem;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
@@ -416,7 +423,7 @@ button, input{
 }
 
 .home__img{
-    height: 420px;
+    height: 400px;
     transform: translate(-3rem);
     justify-self: center;
 }
@@ -424,36 +431,110 @@ button, input{
 .home__indicator{
     width: 8px;
     height: 8px;
-    background-color: var(--title-color);
+    background: var(--title-color);
     border-radius: 50%;
     position: absolute;
     bottom: 15%;
     left: 45%;
 }
 
-.home__indicator::after{
-    content: "";
+.home__indicator:after{
+    content: '';
     position: absolute;
+    width: 1px;
     height: 75px;
     background: var(--title-color);
     top: 0;
     right: 45%;
 }
 
-/* Tela de Cadastro */
+.home__details-img{
+    position: absolute;
+    bottom: 0;
+    right: 58%;
+}
 
-.singup{
-    color: var(--title-color);
+.home__details-title, .home__details-subtitle{
+    display: block;
     font-size: var(--smal-font-size);
+    text-align: right;
+}
+
+.home__subtitle{
+    font-size: var(--h3-font-size);
+    text-transform: uppercase;
+    margin-bottom: var(--mb-1);
+}
+
+.home__title{
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    line-height: 105%;
+    margin-bottom: var(--mb-1-5);
+}
+
+.home__description{
+    margin-bottom: var(--mb-2-5);
+    padding-right: 2rem;
+}
+
+.home__buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -------- Botoês -------- */
+
+.button{
+    display: inline-block;
+    background: var(--first-color);
+    color: #fff;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
     font-weight: var(--font-medium);
+    transition: .3s;
 }
 
-.singup a{
-    color: red;
+.button:hover{
+    background: var(--first-color-alt);
 }
 
-.show-login{
-    right: 0;
+.button_icon{
+    font-size: 1.25rem;
+}
+
+.button--link{
+    color: var(--title-color);
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+/* Swiper Class */
+
+.swiper-pagination{
+    position: initial;
+    margin-top: var(--mb-2-5);
+}
+
+.swiper-pagination-bullet{
+    width: 5px;
+    height: 5px;
+    background: var(--title-color);
+    opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 .5rem; 
+}
+
+.swiper-pagination-bullet-active{
+    width: 1.5rem;
+    height: 5px;
+    border-radius: .5rem;
 }
 
 .search_container{
@@ -471,6 +552,7 @@ button, input{
 
 .search_form{
     width: 300px;
+    margin-top: 6%;
     display: inline-block;
     border: 1px solid black;
     border-radius: 15px;

@@ -1,23 +1,38 @@
-const showCart = document.getElementById('show-cart');
-const changeCart = document.getElementById('cart');
-const closeCart = document.getElementById('close-cart');
+// Abre e fecha a pagina de login
 
-    showCart.addEventListener('click', function(e){
-        changeCart.style.right = 0;
-    })
+let openLogin = document.getElementById("icone-user");
+let closeLogin = document.getElementById("login-close");
 
-    closeCart.addEventListener('click', function(e){
-        changeCart.style.right = "-100%";
-    })
+openLogin.addEventListener('click', function(e){
+    document.getElementById("login").style.right = "0";
+})
 
-const showLogin = document.getElementById('show-login');
-const changeLogin = document.getElementById('login');
-const closeLogin = document.getElementById('close-login');
-    
-    showLogin.addEventListener('click', function(e){
-        changeLogin.style.right = 0;
-    })
-    
-    closeLogin.addEventListener('click', function(e){
-        changeLogin.style.right = "-100%";
-    })
+closeLogin.addEventListener('click', function(e){
+    document.getElementById("login").style.right = "-100%";
+})
+
+
+// Abre e fecha o carrinho
+
+let openCart = document.getElementById("icone-cart");
+let closeCart = document.getElementById("cart-close");
+
+openCart.addEventListener('click', function(e){
+    document.getElementById("cart").style.right = "0";
+})
+
+closeCart.addEventListener('click', function(e){
+    document.getElementById("cart").style.right = "-100%";
+})
+
+// Home Swiper
+
+var homeSwiper = new Swiper(".home-swiper", {
+    spaceBetween: 30,
+    loop: 'true',
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
