@@ -6,7 +6,7 @@
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="../CSS/style.css">
         <link rel="icon" href="/img/Logo/logo.png">
-        <title> Sign Up </title>
+        <title> Support </title>
     </head>
     <body>
         <header class="header" id="header">
@@ -42,21 +42,17 @@
                 </div>
             </nav>
         </header>
-        <div class="signup_container">
-                    <div class="signup_form">
-                        <form id="signup" method="post" action="./assets/PHP/signUp.php" >
-                                <h1> Cadastrar </h1>
-                                <input type="text" name="name" placeholder="Nome Completo"/>
-                                <input type="email" name="email" placeholder="Email">
-                                <input type="password" name="password" placeholder="Senha">
-                                <input type="number" name="phone" placeholder="Número celular">
-                                <input type="number" name="cpf"  placeholder="CPF">
-                                <input type="date" name="birthdate">
-                                <input type="submit" value="Cadastrar"/>
-                        </form>
-                    </div>
+        <div class="support_container">
+            <div class="support_form">
+                <form id="user-question" method="post" action="./assets/PHP/signUp.php" >
+                        <h1> Message </h1>
+                            <input type="text" name="name" placeholder="Nome Completo"/>
+                            <input type="email" name="email" placeholder="Email"/>
+                            <input type="text" name="subject" placeholder="Assunto"/>
+                        <textarea name="" id="" cols="0" rows="7"></textarea>
+                        <input type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
-
-        <script src="../JS/script.js"></script>
     </body>
 </html>
