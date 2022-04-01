@@ -1,48 +1,47 @@
 <?php
     include_once("conexao.php");
 
-    echo "<h1> Selecionando registros usando FOR </h1>";
     $sqlRegistros = mysqli_query($conexao,"select * from tbProduct");
     $num_linhas = mysqli_num_rows($sqlRegistros);
 
-    // echo "<table border = '1'>";
+    $userCategoria = $_POST['userCategoria'];
+    $userMarca = $_POST['userMarca'];
+    $userPreco = $_POST['userPreco'];
 
-    // echo    "<tr>
-    //         <th> Código </th>
-    //         <th> Nome </th>
-    //         <th> Marca </th>
-    //         <th> Preco </th> 
-    //         <th> Foto </th>
-    //         <th> Descricao </th> </tr>";
-        for($i=0; $i<10; $i++){
-            $dados = mysqli_fetch_array($sqlRegistros);
-            $idProduto = $dados["idProduct"];
-            $nome = $dados["product__name"];
-            $marca = $dados["product__brand"];
-            $preco = $dados["product__price"];
-            $imagem = $dados["product__image"];
-            $desc = $dados["product__desc"];
-            $idCategoria = $dados["idCategory"];
+    if($userCategoria == "Smartphone"){
+      $userCategoria = 1;
+    }
+    else if($userCategoria == "Notebook"){
+      $userCategoria = 2;
 
-            if($nome == 'Iphone 13'){
-                $i = 10;
-            } 
+    }
+    else if($userCategoria == "Monitor"){
+      $userCategoria = 3;
+
+    }
+    else{
+      $userCategoria = 4;
+    }
+
+    for($i = 0; $i < $num_linhas; $i++){
+        $dados = mysqli_fetch_array($sqlRegistros);
+
+        $idProduto = $dados["idProduct"];
+        $nome = $dados["product__name"];
+        $marca = $dados["product__brand"];
+        $preco = $dados["product__price"];
+        $imagem = $dados["product__image"];
+        $desc = $dados["product__desc"];
+        $idCategoria = $dados["idCategory"];
+
+        if($marca == $userMarca && $idCategoria == $userCategoria){
+          $i=14;
         }
-
-        // echo $imagem;
-
-        // if($idCategoria == 1){
-            
-        //     echo    "<tr>
-        //     <td> $idProduto </td>
-        //     <td> $nome </td>
-        //     <td> $marca </td>
-        //     <td> $preco </td> 
-        //     <td> <img src='$imagem'> </td>
-        //     <td> $desc </td> </tr>";
-        // }
-
-        // echo "</table";
+        else if($i >= $num_linhas - 1){
+          die("Error: Product not found");
+        }
+        
+    }
     
 ?>
 
@@ -121,6 +120,7 @@
             <div class = "product-detail">
               <h2>about this item: </h2>
               <p> <?php echo $desc ?> </p>
+
               <ul>
                 <li>Modelo: <span> <?php echo $nome ?> </span></li>
                 <li>Marca: <span> <?php echo $marca ?> </span></li>

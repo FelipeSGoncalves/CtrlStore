@@ -16,16 +16,24 @@ body {
     color: black;
 }
 
-.signup_container{
+main{
     width: 80%;
     height: 80%;
     top: 10%;
     left: 10%;
     position: absolute;
-    border-radius: 5px;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
     transition: 1s;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+input{
+    margin-left: 3%;
+}
+
+.titulo{
+    padding-top: 20px;
+    padding-left: 30%;
 }
 
 .signup_form{
@@ -41,11 +49,7 @@ body {
     transition: 1s;
 }
 
-.signup_form input{
-    width: 50%;
-    height: 50px;
-    margin: auto;
-    margin-top: 10px;
+.signup_form input, select{
     border-radius: 2px;
     border: 1px solid #B906FA;
     text-align: center; 
@@ -57,25 +61,17 @@ body {
     transition: 1s;
 }
 
-.signup_form input[type=submit]{
+.signup_form input[type=submit], select{
     width: 25%;
     height: 50px;
-    text-align: center; 
     font-size: 15px;
     font-weight: bold;
     font-family: 'Source Code Pro', monospace;
     color: white;
-    margin: auto;
-    margin-top: 10px;
     border-radius: 2px;
     border-color: #9c04d3;
     cursor: pointer; 
     display: block;
     background-color:#9c04d3 ;
     transition: 1s;
-}
-
-.signup_form input[type=submit]:hover,
-.signup_form input[type=submit]:focus {
-  background: #f700ff;
 }

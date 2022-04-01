@@ -139,3 +139,65 @@ button, input{
 .nav__toggle{
     display: none;
 }
+
+
+.signup_container{
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.signup_form{
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-family: var(--body-font);
+    margin-left: 10%;
+    margin-top: 5%;
+    transition: 1s;
+}
+
+.signup_form input{
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: 1px solid hsl(250, 8%, 35%);
+    text-align: center; 
+    font-size: 12px;
+    font-weight: bold;
+    font-family: var(--body-font);
+    color: hsl(250, 8%, 15%);
+    background-color: white;
+    transition: 1s;
+}
+
+.signup_form input[type=submit]{
+    width: 25%;
+    height: 50px;
+    text-align: center; 
+    font-size: 15px;
+    font-weight: bold;
+    font-family: var(--body-font);
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 2px;
+    border-color: hsl(250, 8%, 15%);
+    cursor: pointer; 
+    display: block;
+    background-color:hsl(250, 8%, 35%);
+    transition: 1s;
+}
+
+.signup_form input[type=submit]:hover,
+.signup_form input[type=submit]:focus {
+  background: hsl(250, 8%, 15%);
+}

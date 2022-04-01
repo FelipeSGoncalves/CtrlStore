@@ -7,7 +7,7 @@
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/signup.css">
+    <link rel="stylesheet" href="../CSS/search.css">
 
     <title> CtrlStore </title>
 </head>
@@ -47,20 +47,65 @@
     </header>
 
     <main>
-        <div class="signup_container">
-            <div class="signup_form">
-                <form id="signup" method="post" action="../PHP/lista-produtos.php" >
-                        <h1> Cadastrar </h1>
-                        <input type="text" name="name" placeholder="Nome Completo"/>
-                        <input type="email" name="email" placeholder="Email">
-                        <input type="password" name="password" placeholder="Senha">
-                        <input type="number" name="phone" placeholder="Número celular">
-                        <input type="number" name="cpf"  placeholder="CPF">
-                        <input type="date" name="birthdate">
-                        <input type="submit" value="Cadastrar"/>
-                </form>
-            </div>
+        <div class="titulo">
+            <h3> Te ajudamos a escolher o produto ideal </h3> <br>
         </div>
+
+        <form action="../PHP/lista-produtos.php" method="post">
+            <div class="categorias">
+                <label for=""><strong> Qual a categoria? </strong></label> <br> <br>
+
+                <select name="userCategoria" id="">
+                    <option value="Smartphone"> Smartphone </option>
+                    <option value="Notebook"> Notebook </option>
+                    <option value="Monitor"> Monitor </option>
+                </select> <br>
+            </div>
+
+            <div class="categorias">
+                <label for=""><strong> Qual a marca de preferência? </strong></label> <br> <br>
+
+                <select name="userMarca" id="">
+                    <option value="Apple"> Apple</option>
+                    <option value="Acer"> Acer </option>
+                    <option value="Alienware"> Alienware </option>
+                    <option value="Dell"> Dell </option>
+                    <option value="Lenovo"> Lenovo </option>
+                    <option value="LG"> LG </option>
+                    <option value="Motorola"> Motorola </option>
+                    <option value="Samsung"> Samsung </option>
+                    <option value="Xiaomi"> Xiaomi </option>
+                </select> <br>
+            </div>
+
+            <div class="categorias">
+                <label for=""><strong> Qual a faixa de preço? </strong></label> <br> <br>
+
+                <select name="userPreco" id="">
+                    <option value="1000"> Até 2000 </option>
+                    <option value="3000"> De 2000 a 4000 </option>
+                    <option value="6000"> De 4000 a 8000 </option>
+                    <option value="8000"> Acima de 8000 </option>
+                </select> <br>
+            </div>
+
+            <div class="categorias">
+                <label for=""><strong> Qual o seu tipo de uso? </strong></label> <br>
+
+                <input type="radio" id="Smartphone" class="categoria" name="categoria"> Tarefas basicas <br>
+
+                <input type="radio" id="Notebook" class="categoria" name="categoria"> Trabalho <br>
+
+                <input type="radio" id="Monitor" class="categoria" name="categoria"> Jogos <br> 
+
+                <input type="radio" id="Monitor" class="categoria" name="categoria"> Tudo  <br> 
+            </div>
+
+            <div>
+                <input type="submit" value="Buscar">
+            </div>
+        </form>
+
     </main>
 
 </body>
