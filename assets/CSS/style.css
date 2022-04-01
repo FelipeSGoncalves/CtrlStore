@@ -455,6 +455,61 @@ button, input{
     right: 0;
 }
 
+.search_container{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+    transition: 2s;
+}
+
+.search_title{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.search_form{
+    width: 300px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--container-color);
+}
+
+.search_form input[type=submit]{
+    width: 30%;
+    height: 30px;
+    display: block;
+    margin-left: 35%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    background-color: var();
+    transition: 1s;
+}
+
+.search_categories{
+    width: 90%;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    text-align: center;
+    
+}
+
+.search_categories select{
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.search_categories .uses{
+    width: 80%;
+    text-align: left;
+    margin-left: 20%;
+}
+
 .signup_container{
     width: 80%;
     height: 80%;
@@ -462,7 +517,7 @@ button, input{
     left: 10%;
     position: absolute;
     border-radius: 5px;
-    transition: 1s;
+    transition: 2s;
 }
 
 .signup_form{
@@ -474,7 +529,11 @@ button, input{
     font-family: var(--body-font);
     margin-left: 10%;
     margin-top: 5%;
-    transition: 1s;
+    
+}
+
+.signup_form h1{
+    transition: 5s;
 }
 
 .signup_form input{
@@ -490,7 +549,6 @@ button, input{
     font-family: var(--body-font);
     color: hsl(250, 8%, 15%);
     background-color: white;
-    transition: 1s;
 }
 
 .signup_form input[type=submit]{
@@ -511,7 +569,26 @@ button, input{
     transition: 1s;
 }
 
+.signup_form h1:focus {
+  color: black;
+}
+
 .signup_form input[type=submit]:hover,
 .signup_form input[type=submit]:focus {
-  background: hsl(250, 8%, 15%);
+    background: hsl(250, 8%, 15%);
+    width: 26%;
+    height: 55px;
+}
+
+.search_form input[type=submit]:hover,
+.search_form input[type=submit]:focus {
+    background: rgb(176, 175, 175);
+    width: 31%;
+    height: 35px;
+}
+
+.header a:hover,
+.header a:focus {
+    color: blueviolet;
+    font-size: 15px;
 }

@@ -196,64 +196,65 @@
             </div>
         </section>
 
-        <!-- <div class="titulo">
-            <h3> Te ajudamos a escolher o produto ideal </h3> <br>
+        <div class="search_container">
+            <div class="search_title">
+                <h3> Te ajudamos a escolher o produto ideal </h3> <br>
+            </div>
+            <div class="search_form">
+                <form  method="post" action="../PHP/lista-produtos.php">
+                    <div class="search_categories">
+                        <label for="userCategoria"><strong> Qual a categoria? </strong></label>
+
+                        <select name="userCategoria" id="">
+                            <option value="Smartphone"> Smartphone </option>
+                            <option value="Notebook"> Notebook </option>
+                            <option value="Monitor"> Monitor </option>
+                        </select> 
+                    </div>
+
+                    <div class="search_categories">
+                        <label for="userMarca"><strong> Qual a marca de preferência? </strong></label>
+
+                        <select name="userMarca" id="">
+                            <option value="Apple"> Apple</option>
+                            <option value="Acer"> Acer </option>
+                            <option value="Alienware"> Alienware </option>
+                            <option value="Dell"> Dell </option>
+                            <option value="Lenovo"> Lenovo </option>
+                            <option value="LG"> LG </option>
+                            <option value="Motorola"> Motorola </option>
+                            <option value="Samsung"> Samsung </option>
+                            <option value="Xiaomi"> Xiaomi </option>
+                        </select>
+                    </div>
+
+                    <div class="search_categories">
+                        <label for="userPreco"><strong> Qual a faixa de preço? </strong></label>
+
+                        <select name="userPreco" id="">
+                            <option value="1000"> Até 2000 </option>
+                            <option value="3000"> De 2000 a 4000 </option>
+                            <option value="6000"> De 4000 a 8000 </option>
+                            <option value="8000"> Acima de 8000 </option>
+                        </select> 
+                    </div>
+
+                    <div class="search_categories">
+                        <label for=""><strong> Qual o seu tipo de uso? </strong></label> <br>
+                        <div class="uses">
+                            <input type="radio" id="Smartphone" class="categories" name="categoria"> Tarefas basicas <br>
+
+                            <input type="radio" id="Notebook" class="categories" name="categoria"> Trabalho <br>
+
+                            <input type="radio" id="Monitor" class="categories" name="categoria"> Jogos <br> 
+
+                            <input type="radio" id="Monitor" class="categories" name="categoria"> Tudo  <br> 
+                        </div>
+                    </div>
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
         </div>
-
-        <form action="../PHP/lista-produtos.php" method="post">
-            <div class="categorias">
-                <label for=""><strong> Qual a categoria? </strong></label> <br> <br>
-
-                <select name="userCategoria" id="">
-                    <option value="Smartphone"> Smartphone </option>
-                    <option value="Notebook"> Notebook </option>
-                    <option value="Monitor"> Monitor </option>
-                </select> <br>
-            </div>
-
-            <div class="categorias">
-                <label for=""><strong> Qual a marca de preferência? </strong></label> <br> <br>
-
-                <select name="userMarca" id="">
-                    <option value="Apple"> Apple</option>
-                    <option value="Acer"> Acer </option>
-                    <option value="Alienware"> Alienware </option>
-                    <option value="Dell"> Dell </option>
-                    <option value="Lenovo"> Lenovo </option>
-                    <option value="LG"> LG </option>
-                    <option value="Motorola"> Motorola </option>
-                    <option value="Samsung"> Samsung </option>
-                    <option value="Xiaomi"> Xiaomi </option>
-                </select> <br>
-            </div>
-
-            <div class="categorias">
-                <label for=""><strong> Qual a faixa de preço? </strong></label> <br> <br>
-
-                <select name="userPreco" id="">
-                    <option value="1000"> Até 2000 </option>
-                    <option value="3000"> De 2000 a 4000 </option>
-                    <option value="6000"> De 4000 a 8000 </option>
-                    <option value="8000"> Acima de 8000 </option>
-                </select> <br>
-            </div>
-
-            <div class="categorias">
-                <label for=""><strong> Qual o seu tipo de uso? </strong></label> <br>
-
-                <input type="radio" id="Smartphone" class="categoria" name="categoria"> Tarefas basicas <br>
-
-                <input type="radio" id="Notebook" class="categoria" name="categoria"> Trabalho <br>
-
-                <input type="radio" id="Monitor" class="categoria" name="categoria"> Jogos <br> 
-
-                <input type="radio" id="Monitor" class="categoria" name="categoria"> Tudo  <br> 
-            </div>
-
-            <div>
-                <input type="submit" value="Buscar">
-            </div>
-        </form> -->
 
     </main>
 
