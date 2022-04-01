@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="../CSS/productPage.css">
     <link rel="stylesheet" href="../CSS/style.css">
+    
 </head>
 
 <body>
