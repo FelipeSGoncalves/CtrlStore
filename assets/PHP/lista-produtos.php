@@ -38,7 +38,8 @@
           $i=14;
         }
         else if($i >= $num_linhas - 1){
-          die("Error: Product not found");
+          echo "<script>alert('Produto não encontrado!');";
+          echo "location.href='../HTML/search.html'</script>";
         }
         
     }
