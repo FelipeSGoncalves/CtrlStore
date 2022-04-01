@@ -149,6 +149,7 @@ button, input{
 
 .login__toggle, .nav__logo, .nav__toggle, .nav__shop{
     color: var(--title-color);
+    transition: 2s;
 }
 
 .nav__logo{
