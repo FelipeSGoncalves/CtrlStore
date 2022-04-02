@@ -37,10 +37,6 @@
                     <li class="nav__item">
                         <a href="support.html" class="nav__link"> Contatos </a>
                     </li>
-
-                    <li class="nav__item">
-                        <a href="cart.html" class="nav__link"> Carrinho </a>
-                    </li>
                 </ul>
             </div>
 
@@ -169,20 +165,20 @@
             </div>
 
             <div>
-                <p class="singup"> Ainda sem cadastro? <a href="registro.html"> Cadastre-se </a> </p> 
+                <p class="singup"> Ainda sem cadastro? <a href="signUp.html"> Cadastre-se </a> </p> 
             </div>
         </form>
     </div>
         <div class="signup_container">
                     <div class="signup_form">
-                        <form id="signup" method="post" action="./assets/PHP/signUp.php" >
+                        <form id="signup" method="post" action="../PHP/signUp.php" >
                                 <h1> Cadastrar </h1>
-                                <input type="text" name="name" placeholder="Nome Completo"/>
-                                <input type="email" name="email" placeholder="Email">
-                                <input type="password" name="password" placeholder="Senha">
-                                <input type="number" name="phone" placeholder="Número celular">
-                                <input type="number" name="cpf"  placeholder="CPF">
-                                <input type="date" name="birthdate">
+                                <input type="text" name="name" placeholder="Nome Completo" required/>
+                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="password" name="password" placeholder="Senha" required>
+                                <input type="number" name="phone" placeholder="Número celular" required>
+                                <input type="number" name="cpf"  placeholder="CPF" required>
+                                <input type="date" name="birthdate" required>
                                 <input type="submit" value="Cadastrar"/>
                         </form>
                     </div>

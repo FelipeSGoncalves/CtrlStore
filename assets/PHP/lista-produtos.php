@@ -68,14 +68,14 @@
 <body>
     <header class="header" id="header"> 
         <nav class="nav container">
-            <a href="landingPage.html" class="nav__logo">
+            <a href="../HTML/landingPage.html" class="nav__logo">
                 <i class="bx bxs-shopping-bags nav__logo-icon"></i> CrtlStore
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="landingPage.html" class="nav__link active-link"> Home </a>
+                        <a href="../HTML/landingPage.html" class="nav__link active-link"> Home </a>
                     </li>
 
                     <li class="nav__item">
@@ -84,10 +84,6 @@
 
                     <li class="nav__item">
                         <a href="support.html" class="nav__link"> Contatos </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="cart.html" class="nav__link"> Carrinho </a>
                     </li>
                 </ul>
             </div>
@@ -217,7 +213,7 @@
             </div>
 
             <div>
-                <p class="singup"> Ainda sem cadastro? <a href="registro.html"> Cadastre-se </a> </p> 
+                <p class="singup"> Ainda sem cadastro? <a href="signUp.html"> Cadastre-se </a> </p>  
             </div>
         </form>
     </div>

@@ -38,9 +38,6 @@
                         <a href="support.html" class="nav__link"> Contatos </a>
                     </li>
 
-                    <li class="nav__item">
-                        <a href="cart.html" class="nav__link"> Carrinho </a>
-                    </li>
                 </ul>
             </div>
 
@@ -169,18 +166,18 @@
             </div>
 
             <div>
-                <p class="singup"> Ainda sem cadastro? <a href="registro.html"> Cadastre-se </a> </p> 
+                <p class="singup"> Ainda sem cadastro? <a href="signUp.html"> Cadastre-se </a> </p> 
             </div>
         </form>
     </div>
         <div class="support_container">
             <div class="support_form">
-                <form id="user-question" method="post" action="./assets/PHP/signUp.php" >
+                <form id="user-question" method="post" action="../PHP/support.php" >
                         <h1> Message </h1>
-                            <input type="text" name="name" placeholder="Nome Completo"/>
-                            <input type="email" name="email" placeholder="Email"/>
-                            <input type="text" name="subject" placeholder="Assunto"/>
-                        <textarea name="" id="" cols="0" rows="7"></textarea>
+                            <input type="text" name="name" placeholder="Nome Completo" required/>
+                            <input type="email" name="email" placeholder="Email" required/>
+                            <input type="text" name="subject" placeholder="Assunto" required/>
+                            <textarea name="message" id="" cols="0" rows="7"></textarea>
                         <input type="submit" value="Enviar">
                 </form>
             </div>
