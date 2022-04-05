@@ -48,7 +48,7 @@ O sistema permite que o usuário faça cadastro e consequentemente login no sist
 ### Roadmap
 ---
 
-### ✔️ Tecnologias
+### Tecnologias
 ---
 
 As seguintes ferramentas foram utilizadas na construção do projeto:
