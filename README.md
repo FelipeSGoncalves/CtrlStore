@@ -71,5 +71,5 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 [<img src="https://avatars.githubusercontent.com/u/55161486?s=400&v=4" width=115 > <br> <sub> Daniel Chielle </sub>](https://github.com/LeinadRPFI) |
 | :---: |  
 
-[<img src="https://avatars.githubusercontent.com/u/98662238?v=4" width=115 > <br> <sub> Daniel Chielle </sub>](https://github.com/FelipeSGoncalves) |
+[<img src="https://avatars.githubusercontent.com/u/98662238?v=4" width=115 > <br> <sub> Felipe Gonçalves </sub>](https://github.com/FelipeSGoncalves) |
 | :---: |  
