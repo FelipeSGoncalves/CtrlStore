@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="#sobre"> Sobre </a> -
-    <a href="#roadmap"> Roadmap </a> -
+    <a href="#features"> Features </a> -
     <a href="#tecnologias"> Tecnologias </a> -
     <a href="#autores"> Autores </a>
 </p>
@@ -45,7 +45,14 @@ O sistema permite que o usuário faça cadastro e consequentemente login no sist
 </ul>
 
 
-## Roadmap
+## Features
+
+- [x] Cadastro de usuário
+- [x] Login de usuário
+- [x] Buscador de produtos
+- [ ] Funcionalidades de venda
+- [ ] Cadastro de produtos
+- [ ] Remoção de produtos
 
 
 ## Tecnologias  
