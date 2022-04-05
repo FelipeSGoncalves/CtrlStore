@@ -45,11 +45,11 @@ O sistema permite que o usuário faça cadastro e consequentemente login no sist
 </ul>
 
 
-### Roadmap
---
+## Roadmap
 
-### Tecnologias  
---
+
+## Tecnologias  
+
 
 As seguintes ferramentas foram utilizadas na construção do projeto:
 
