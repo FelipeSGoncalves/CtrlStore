@@ -4,9 +4,9 @@
 
 <p align="center">
     <a href="#sobre"> Sobre </a> -
-    <a href="#sobre"> Roadmap </a> -
-    <a href="#sobre"> Tecnologias </a> -
-    <a href="#sobre"> Autores </a>
+    <a href="#roadmap"> Roadmap </a> -
+    <a href="#tecnologias"> Tecnologias </a> -
+    <a href="#autores"> Autores </a>
 </p>
 
 ---
@@ -48,7 +48,7 @@ O sistema permite que o usuário faça cadastro e consequentemente login no sist
 ### Roadmap
 ---
 
-### Tecnologias
+### ✔️ Tecnologias
 ---
 
 As seguintes ferramentas foram utilizadas na construção do projeto:
